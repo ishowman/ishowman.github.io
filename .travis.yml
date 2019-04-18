@@ -1,6 +1,6 @@
 branches:
   only:
-    - hexo
+    - blog
 
 language: node_js
 node_js:
