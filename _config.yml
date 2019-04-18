@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: FBI-Warning
 subtitle:
 description:
 keywords:
-author: John Doe
+author: FBI
 language:
 timezone:
 
@@ -88,7 +88,7 @@ pwa:
     body:
       name: Hexo
       short_name: Hexo
-      start_url: http://yoursite.com
+      start_url: https://ishowman.github.io/
       description: null
       scope: /
       display: standalone
