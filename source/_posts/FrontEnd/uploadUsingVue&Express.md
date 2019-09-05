@@ -1,3 +1,9 @@
+---
+title: upload using Vue, Express and multer
+date: 2019-01-21 20:01:15
+tags: Vue Express practice
+---
+
 # 目的
 在 Vue 中通过请求 express 的接口 api，实现图片上传功能。
 
@@ -57,16 +63,15 @@ export default {
     },
     async uploadFile() {
       const formData = new FormData()
-      formData.append('file', this.file)
+      formData.append('file', this.file) // 这里的`file`字段必须对应接口里 multer 使用的字段
       const data = await this.$axios.post('/api/upload/file', formData)
     },
     async uploadFiles() {
       const formData = new FormData()
       for( let file of this.files) {
-        formData.append('files', file)
+        formData.append('files', file) // 这里的`files`字段必须对应接口里 multer 使用的字段
       }
       const data = await this.$axios.post('/api/upload/files', formData)
-     
     }
   }
 }
