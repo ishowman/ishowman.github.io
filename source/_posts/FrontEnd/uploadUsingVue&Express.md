@@ -1,7 +1,11 @@
 ---
 title: upload using Vue, Express and multer
 date: 2019-01-21 20:01:15
-tags: Vue Express practice
+tags: 
+- Vue
+- Express
+- practice
+updated: 2019-01-21 20:01:15
 ---
 
 # 目的
